@@ -1,0 +1,75 @@
+/*SEARCH QUIZ*/
+.search_quiz {
+    padding: 50px 0 75px;
+}
+
+.search_form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 10px;
+    width: calc(100% - 30px);
+    max-width: 560px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: #ddd 0 0 10px;
+}
+
+.search_form .item_title {
+    text-align: center;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search_box input[type=text] {
+    flex: 1 1 auto;
+    border-radius: 5px 0 0 5px;
+}
+
+.search_btn {
+    border-radius: 0 5px 5px 0;
+}
+
+.search_btn.btn_fill .icon {
+    fill: var(--text-color-contrast)
+}
+
+.quiz_result {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--site-bg-contrast);
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.quiz_result li + li {
+    margin-top: 8px;
+}
+
+.quiz_result a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.quiz_result a:hover {
+    text-decoration: underline;
+}
+
+.quiz_result img {
+    flex: 0 0 24px;
+    display: block;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}

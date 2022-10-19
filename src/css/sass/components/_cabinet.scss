@@ -1,0 +1,160 @@
+/*CABINET*/
+
+.cabinet {
+    padding: 30px 0 50px 0;
+}
+
+.cabinet .centre {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 15px;
+    width: calc(100% - 30px);
+    max-width: 1024px;
+    border-radius: 5px;
+    background-color: var(--site-bg-contrast);
+}
+
+.cabinet_inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabinet_inner > .col-1 {
+    background-color: var(--grey);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.user_setting {
+    display: flex;
+    flex-direction: column;
+}
+
+.user_setting + .user_setting {
+    margin-top: 20px;
+}
+
+.user_setting .small_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.user_setting .small_title .icon {
+    margin-right: 8px;
+}
+
+.setting_info {
+    display: flex;
+    align-items: center;
+}
+
+.setting_info.active {
+    display: none;
+}
+
+.setting_info span {
+    transition: 0.3s;
+}
+
+.setting_info a {
+    font-size: 0;
+    order: 1;
+    margin-left: 8px;
+}
+
+.setting_info a:hover + span {
+    color: var(--link-color-active);
+}
+
+.change_setting {
+    display: none;
+}
+
+.setting_info.active + .change_setting {
+    display: flex;
+    align-items: center;
+}
+
+.change_setting input {
+    flex: 1 1 auto;
+    min-width: 0px;
+}
+
+.change_setting .btn {
+    flex: 0 0 auto;
+    margin-left: 10px;
+}
+
+.close_change {
+    font-size: 0;
+    flex: 0 0 auto;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.close_change .icon {
+    width: 12px;
+    height: 12px;
+    fill: var(--dark);
+    transition: 0.3s;
+}
+
+.close_change:hover .icon {
+    fill: var(--danger);
+}
+
+.change_photo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.change_photo .photo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.change_photo .photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.upload_photo {
+    margin-left: 12px;
+}
+
+.cabinet_inner > .col-2 {
+    background-color: var(--grey);
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.info_author {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.info_author span {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.info_author textarea {
+    height: 150px;
+}
+
+.info_author .btn {
+    margin-top: 6px;
+    width: max-content;
+    padding: 7px 16px;
+    min-height: 32px;
+}

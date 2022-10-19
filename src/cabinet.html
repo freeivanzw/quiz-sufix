@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You-quiz</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+</head>
+<body>
+<!--HEADER SITE-->
+<header class="header_site">
+    <a href="/" class="header_logo">
+        <img src="./images/logo.svg" alt="header_logo">
+    </a>
+    <div class="right_col">
+        <span class="tariff">Залишилось: <b>78</b> запитів зі <b>100</b></span>
+        <a href="#" class="user_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg></a>
+    </div>
+    <div class="header_menu">
+        <div class="toggle_language">
+            <a href="#" class="active">UA</a>
+            <a href="#">EN</a>
+        </div>
+        <span class="tariff"><b>78</b> запитів зі <b>100</b></span>
+        <ul class="menu_list">
+            <li><a href="#">Головка сторінка</a></li>
+            <li><a href="/">Мої квізи</a></li>
+            <li><a href="#">Мої пройдені квізи</a></li>
+            <li><a href="/cabinet.html">Реєстраційні дані</a></li>
+            <li><a href="#">Оплата та баланс</a></li>
+            <li><a href="#">Допомога</a></li>
+        </ul>
+        <div class="social_list">
+            <a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a>
+            <a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#instagram"></use></svg></a>
+        </div>
+        <a href="#" class="logout"><svg class="icon"><use xlink:href="./images/sprite.svg#logout"></use></svg>Вийти</a>
+    </div>
+</header>
+<main>
+    <!--CABINET-->
+    <section class="cabinet">
+        <div class="centre">
+            <span class="item_title">Мій профіль</span>
+            <div class="cabinet_inner">
+                <div class="col-1">
+                    <div class="change_photo">
+                        <div class="photo"><img src="./images/user-img.png" width="50" height="50"></div>
+                        <div class="upload_photo">
+                            <a href="#" class="btn_upload">Змінити фото</a>
+                        </div>
+                    </div>
+                    <div class="user_setting">
+                        <b class="small_title">Email</b>
+                        <div class="setting_info"><span>testtest@asdf.com</span></div>
+                    </div>
+                    <div class="user_setting">
+                        <b class="small_title">Пароль</b>
+                        <div class="setting_info"><a href="#" class="change_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#edit"></use></svg>change</a><span>*********</span></div>
+                        <div class="change_setting">
+                            <input type="text">
+                            <button class="btn btn_fill">Змінити</button>
+                            <a href="#" class="close_change"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+                        </div>
+                    </div>
+                    <div class="user_setting">
+                        <b class="small_title">Телефон</b>
+                        <div class="setting_info"><a href="#" class="change_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#edit"></use></svg>change</a><span>+380985811613</span></div>
+                        <div class="change_setting">
+                            <input type="text">
+                            <button class="btn btn_fill">Змінити</button>
+                            <a href="#" class="close_change"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+                        </div>
+                    </div>
+                    <div class="user_setting">
+                        <b class="small_title">Створено</b>
+                        <div class="setting_info"><span>22.09.2022</span></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <label class="info_author">
+                        <span>Про себе</span>
+                        <textarea></textarea>
+                        <a href="#" class="btn">Зберегти</a>
+                    </label>
+                    <div class="user_setting">
+                        <b class="small_title"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg>facebook</b>
+                        <div class="setting_info">
+                            <span>https://instagram.com/user-123</span>
+                            <a href="#" class="change_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#edit"></use></svg></a>
+                        </div>
+                        <div class="change_setting">
+                            <input type="text">
+                            <button class="btn btn_fill">Змінити</button>
+                            <a href="#" class="close_change"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+                        </div>
+                    </div>
+                    <div class="user_setting">
+                        <b class="small_title"><svg class="icon"><use xlink:href="./images/sprite.svg#twitter"></use></svg>twitter</b>
+                        <div class="setting_info">
+                            <span>https://instagram.com/user-123</span>
+                            <a href="#" class="change_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#edit"></use></svg></a>
+                        </div>
+                        <div class="change_setting">
+                            <input type="text">
+                            <button class="btn btn_fill">Змінити</button>
+                            <a href="#" class="close_change"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+                        </div>
+                    </div>
+                    <div class="user_setting">
+                        <b class="small_title"><svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg>whatsapp</b>
+                        <div class="setting_info">
+                            <span>https://instagram.com/user-123</span>
+                            <a href="#" class="change_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#edit"></use></svg></a>
+                        </div>
+                        <div class="change_setting">
+                            <input type="text">
+                            <button class="btn btn_fill">Змінити</button>
+                            <a href="#" class="close_change"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="shadow hidden">close</div>
+</main>
+<!--FOOTER SITE-->
+<footer class="footer_site">
+    <div class="bottom_info">
+        <span class="copyright">© Copyright - <a href="#">Quiz</a> 2013 - 2022</span>
+    </div>
+    <span class="confident"><a href="https://websufix.com">SUFIX</a></span>
+</footer>
+<div class="styleguide hidden" style="display: flex; flex-direction: column;">
+    <h1>hello world</h1>
+    <span class="main_title">hello world</span>
+    <h2>hello world</h2>
+    <span class="sub-main_title">hello world</span>
+    <h3>hello world</h3>
+    <span class="item_title">hello world</span>
+    <h4>hello world</h4>
+    <span class="small_title">hello world</span>
+    <h5>hello world</h5>
+    <span class="small_title">hello world</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias deleniti eos excepturi nisi perferendis, perspiciatis provident quia vitae.</p>
+    <input type="text" placeholder="name">
+    <a href="#" class="btn">click me</a>
+    <a href="#">link linkl</a>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

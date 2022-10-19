@@ -1,0 +1,42 @@
+/*FOOTER SITE*/
+
+.footer_site {
+    background-color: var(--site-bg-contrast);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+body.user_page .footer_site {
+    border-top: 1px solid var(--border-color);
+}
+
+.bottom_info {
+    font-size: 12px;
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_email {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.footer_email li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer_email li .icon {
+    fill: var(--dark);
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer_email li:hover .icon {
+    fill: var(--primary);
+}

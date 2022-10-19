@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You-quiz</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+</head>
+<body>
+<!--HEADER SITE-->
+<header class="header_site">
+    <a href="/" class="header_logo">
+        <img src="./images/logo.svg" alt="header_logo">
+    </a>
+    <div class="right_col">
+        <span class="tariff">Залишилось: <b>78</b> запитів зі <b>100</b></span>
+        <a href="#" class="user_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg></a>
+    </div>
+    <div class="header_menu">
+        <div class="toggle_language">
+            <a href="#" class="active">UA</a>
+            <a href="#">EN</a>
+        </div>
+        <span class="tariff"><b>78</b> запитів зі <b>100</b></span>
+        <ul class="menu_list">
+            <li><a href="#">Головка сторінка</a></li>
+            <li><a href="/">Мої квізи</a></li>
+            <li><a href="#">Мої пройдені квізи</a></li>
+            <li><a href="/cabinet.html">Реєстраційні дані</a></li>
+            <li><a href="#">Оплата та баланс</a></li>
+            <li><a href="#">Допомога</a></li>
+        </ul>
+        <div class="social_list">
+            <a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a>
+            <a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#instagram"></use></svg></a>
+        </div>
+        <a href="#" class="logout"><svg class="icon"><use xlink:href="./images/sprite.svg#logout"></use></svg>Вийти</a>
+    </div>
+</header>
+<main>
+    <!--EDIT QUIZ-->
+    <section class="edit_quiz">
+        <aside class="menu_quiz">
+            <a href="#" class="close-menu_quiz"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a>
+            <b class="quiz_title-menu">Створення квізу</b>
+            <ul class="menu_quiz-list">
+                <li><a href="#" class="active"><b>1</b><span>Стартова сторінка і опис</span></a></li>
+                <li><a href="./question.html"><b>2</b><span>Запитання</span></a></li>
+                <li><a href="#"><b>3</b><span>Форма контактів</span></a></li>
+                <li><a href="#"><b>4</b><span>Редагувати</span></a></li>
+                <li><a href="#"><b>5</b><span>Встановлення квізу</span></a></li>
+                <li><a href="#"><b>6</b><span>Запуск реклами</span></a></li>
+            </ul>
+        </aside>
+        <div class="quiz_content">
+            <a href="#" class="open-menu_quiz">open menu<svg class="icon"><use xlink:href="./images/sprite.svg#menu"></use></svg></a>
+            <div class="first_page">
+                <div class="col-1">
+                    <b class="small_title">Схема сторінки</b>
+                    <div class="dropdown select_dropdown">
+                        <div class="overflow"><img src="./images/standart.png"><span>Standart</span><button type="button" class="drop_arrow"></button></div>
+                        <ul style="display: none">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/standart.png">
+                                    <span>Фото з боку</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/standart.png">
+                                    <span>Фото на весь фон</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <b class="small_title">Розміщення елементів</b>
+                    <div class="dropdown position_dropdown">
+                        <div class="overflow"><span>Зліва</span><button type="button" class="drop_arrow"></button></div>
+                        <ul style="display: none">
+                            <li>
+                                <a href="#">Зліва</a>
+                            </li>
+                            <li>
+                                <a href="#">Посередині</a>
+                            </li>
+                            <li>
+                                <a href="#">Справа</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <b class="small_title">Зображення</b>
+                    <div class="select_picture">
+                        <div class="select_place"><svg class="icon"><use xlink:href="./images/sprite.svg#upload"></use></svg></div>
+                        <!--<img src="./images/start-page-desk.png">-->
+                        <a href="#" class="delete_picture"><svg class="icon"><use xlink:href="./images/sprite.svg#trash"></use></svg></a>
+                    </div>
+                    <b class="small_title">Основні кольори</b>
+                    <ul class="color_list">
+                        <li>
+                            <input type="color">
+                            <span>Основний 1</span>
+                        </li>
+                        <li>
+                            <input type="color">
+                            <span>Основний 2</span>
+                        </li>
+                        <li>
+                            <input type="color">
+                            <span>Основний 3</span>
+                        </li>
+                        <li>
+                            <input type="color">
+                            <span>Основний 4</span>
+                        </li>
+                        <li><a href="#">Встановити кольори по замовчуванню</a></li>
+                    </ul>
+                    <b class="small_title">Шрифт</b>
+                    <div class="dropdown position_dropdown">
+                        <div class="overflow"><span>Зліва</span><button type="button" class="drop_arrow"></button></div>
+                        <ul style="display: none">
+                            <li>
+                                <a href="#">Шрифт 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Шрифт 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Шрифт 3</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-2">
+                    <div class="text_box">
+                        <b class="small_title">Заголовок</b>
+                        <input type="text">
+                    </div>
+                    <div class="text_box">
+                        <b class="small_title">Текст</b>
+                        <textarea></textarea>
+                    </div>
+                    <div class="text_box">
+                        <b class="small_title">Текст на кнопці</b>
+                        <input type="text">
+                    </div>
+                    <div class="text_box">
+                        <b class="small_title">Номер телефону</b>
+                        <label class="allow_input-box">
+                            <input type="checkbox">
+                            <span>Показувати номер телефону</span>
+                        </label>
+                        <input type="tel" class="allow_input" disabled>
+                    </div>
+                    <div class="text_box">
+                        <b class="small_title">Логотип компанії</b>
+                        <label class="allow_input-box">
+                            <input type="checkbox">
+                            <span>Показувати логотип компанії</span>
+                        </label>
+                        <div class="select_picture not_active">
+                            <div class="select_place"><svg class="icon"><use xlink:href="./images/sprite.svg#upload"></use></svg></div>
+                            <!--<img src="./images/start-page-desk.png">-->
+                            <a href="#" class="delete_picture"><svg class="icon"><use xlink:href="./images/sprite.svg#trash"></use></svg></a>
+                        </div>
+                    </div>
+                    <div class="text_box">
+                        <b class="small_title">Категорія</b>
+                        <div class="dropdown category_dropdown">
+                            <div class="overflow"><span>Standart 1</span><button type="button" class="drop_arrow"></button></div>
+                            <ul style="display: none">
+                                <li>
+                                    <a href="#">Standart 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Standart 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hashtag_box">
+                        <b class="small_title">Хештеги</b>
+                        <div class="add_hashtag">
+                            <input type="text">
+                            <a href="#">Додати</a>
+                        </div>
+                        <ul>
+                            <li><span>Історія</span><a href="#" class="del_hashtag">delete<svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a></li>
+                            <li><span>Історія</span><a href="#" class="del_hashtag">delete<svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a></li>
+                            <li><span>Історія</span><a href="#" class="del_hashtag">delete<svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a></li>
+                            <li><span>Історія</span><a href="#" class="del_hashtag">delete<svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a></li>
+                        </ul>
+                    </div>
+                    <a href="./question.html" class="btn btn_fill next_settings">Дальше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="shadow hidden">close</div>
+</main>
+<!--FOOTER SITE-->
+<footer class="footer_site">
+    <div class="bottom_info">
+        <span class="copyright">© Copyright - <a href="#">Quiz</a> 2013 - 2022</span>
+    </div>
+    <span class="confident"><a href="https://websufix.com">SUFIX</a></span>
+</footer>
+<div class="styleguide hidden" style="display: flex; flex-direction: column;">
+    <h1>hello world</h1>
+    <span class="main_title">hello world</span>
+    <h2>hello world</h2>
+    <span class="sub-main_title">hello world</span>
+    <h3>hello world</h3>
+    <span class="item_title">hello world</span>
+    <h4>hello world</h4>
+    <span class="box_title">hello world</span>
+    <h5>hello world</h5>
+    <span class="small_title">hello world</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias deleniti eos excepturi nisi perferendis, perspiciatis provident quia vitae.</p>
+    <input type="text" placeholder="name">
+    <a href="#" class="btn">click me</a>
+    <a href="#">link linkl</a>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/*START PAGE*/
+
+.start_page {
+    background-color: var(--site-bg-contrast);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.start_page > .col-1 {
+    flex: 0 1 auto;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
+
+.start_page > .col-2 {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px 100px 32px;
+    position: relative;
+}
+
+.scroll_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.author_quiz {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.photo_author {
+    margin-right: 8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo_author img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.start_page-text {
+    margin-bottom: 12px;
+}
+
+.author_social {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.author_social li + li {
+    margin-left: 10px;
+}
+
+.author_social li a {
+    display: block;
+    padding: 5px;
+}
+
+.author_social a .icon {
+    transition: 0.3s;
+}
+.author_social a:hover .icon {
+    fill: var(--dark)
+}
+
+
+.start_page > .col-2 .btn {
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.start_page-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100px;
+    padding: 16px 32px;
+}
+
+.start_page-bottom ul a {
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.start_page-bottom ul a:hover {
+    text-decoration: underline;
+    color: var(--link-color-active)
+}
+
+.start_page-bottom .confident {
+    text-align: center;
+}
+
+.start_page-bottom .confident a {
+    color: var(--text-color)
+}
+
+.start_page.temp-2 .start_page-bottom .confident a {
+    text-decoration: none;
+    color: var(--text-color-contrast);
+}
+
+.start_page.temp-2 .start_page-bottom .confident a:hover {
+    text-decoration: underline;
+}
+
+.start_page.temp-2 {
+    flex-direction: row;
+}
+
+.start_page.temp-2 > .col-1 {
+    flex: 0 1 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+.start_page.temp-2 > .col-2 {
+    position: absolute;
+    background-color: #00000099;
+    height: 100%;
+    width: 100%;
+    flex: 0 1 100%;
+    justify-content: center;
+    color: #fff;
+    overflow-y: auto;
+}
+
+.start_page.temp-2 .scroll_box {
+    max-width: 460px;
+}
+
+.category_dropdown {
+    max-width: 275px;
+}

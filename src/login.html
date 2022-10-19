@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You-quiz</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+</head>
+<body>
+<!--HEADER SITE-->
+<header class="header_site">
+    <a href="/" class="header_logo">
+        <img src="./images/logo.svg" alt="header_logo">
+    </a>
+    <div class="right_col">
+        <span class="tariff">Залишилось: <b>78</b> запитів зі <b>100</b></span>
+        <a href="#" class="user_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg></a>
+    </div>
+    <div class="header_menu">
+        <div class="toggle_language">
+            <a href="#" class="active">UA</a>
+            <a href="#">EN</a>
+        </div>
+        <span class="tariff"><b>78</b> запитів зі <b>100</b></span>
+        <ul class="menu_list">
+            <li><a href="#">Головка сторінка</a></li>
+            <li><a href="/">Мої квізи</a></li>
+            <li><a href="#">Мої пройдені квізи</a></li>
+            <li><a href="/cabinet.html">Реєстраційні дані</a></li>
+            <li><a href="#">Оплата та баланс</a></li>
+            <li><a href="#">Допомога</a></li>
+        </ul>
+        <div class="social_list">
+            <a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a>
+            <a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#instagram"></use></svg></a>
+        </div>
+        <a href="#" class="logout"><svg class="icon"><use xlink:href="./images/sprite.svg#logout"></use></svg>Вийти</a>
+    </div>
+</header>
+<main>
+    <section class="login_box">
+        <span class="item_title">Реєстрація</span>
+        <span class="sub_text">В вас вже є аккаунт? <a href="#">Увійти</a></span>
+        <label class="input_wrap">
+            <span>Ім`я</span>
+            <input type="text" placeholder="Ім`я">
+        </label>
+        <label class="input_wrap">
+            <span>Email</span>
+            <input type="email" placeholder="Email">
+        </label>
+        <label class="input_wrap">
+            <span>Пароль</span>
+            <input type="password" placeholder="Пароль">
+        </label>
+        <label class="input_wrap">
+            <span>Повторіть пароль</span>
+            <input type="password" placeholder="Повторіть пароль">
+        </label>
+        <label class="input_wrap code_wrap">
+            <span>Код</span>
+            <input type="text" maxlength="4" >
+        </label>
+        <button class="btn btn_fill">Створити аккаунт</button>
+        <span class="item_title">Вхід</span>
+        <span class="sub_text">В вас немає аккаунту? <a href="#">Зереєструватись</a></span>
+        <label class="input_wrap">
+            <span>Email</span>
+            <input type="email" placeholder="Email">
+        </label>
+        <label class="input_wrap">
+            <span>Пароль</span>
+            <input type="password" placeholder="Пароль">
+        </label>
+        <button class="btn btn_fill">Увійти</button>
+    </section>
+
+    <div class="popup_wrap hidden">
+        <div class="popup login_popup">
+            <a href="#" class="close_popup">close</a>
+            <span class="item_title">Реєстрація</span>
+            <span class="sub_text">В вас вже є аккаунт? <a href="#">Увійти</a></span>
+            <label class="input_wrap">
+                <span>Ім`я</span>
+                <input type="text" placeholder="Ім`я">
+            </label>
+            <label class="input_wrap">
+                <span>Email</span>
+                <input type="email" placeholder="Email">
+            </label>
+            <label class="input_wrap">
+                <span>Пароль</span>
+                <input type="password" placeholder="Пароль">
+            </label>
+            <label class="input_wrap">
+                <span>Повторіть пароль</span>
+                <input type="password" placeholder="Повторіть пароль">
+            </label>
+            <label class="input_wrap code_wrap">
+                <span>Код</span>
+                <input type="text" maxlength="4" >
+            </label>
+            <button class="btn btn_fill">Створити аккаунт</button>
+            <span class="item_title">Вхід</span>
+            <span class="sub_text">В вас немає аккаунту? <a href="#">Зереєструватись</a></span>
+            <label class="input_wrap">
+                <span>Email</span>
+                <input type="email" placeholder="Email">
+            </label>
+            <label class="input_wrap">
+                <span>Пароль</span>
+                <input type="password" placeholder="Пароль">
+            </label>
+            <button class="btn btn_fill">Увійти</button>
+        </div>
+    </div>
+
+    <div class="shadow hidden">close</div>
+</main>
+<!--FOOTER SITE-->
+<footer class="footer_site">
+    <div class="bottom_info">
+        <span class="copyright">© Copyright - <a href="#">Quiz</a> 2013 - 2022</span>
+    </div>
+    <span class="confident"><a href="https://websufix.com">SUFIX</a></span>
+</footer>
+<div class="styleguide hidden" style="display: flex; flex-direction: column;">
+    <h1>hello world</h1>
+    <span class="main_title">hello world</span>
+    <h2>hello world</h2>
+    <span class="sub-main_title">hello world</span>
+    <h3>hello world</h3>
+    <span class="item_title">hello world</span>
+    <h4>hello world</h4>
+    <span class="box_title">hello world</span>
+    <h5>hello world</h5>
+    <span class="small_title">hello world</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias deleniti eos excepturi nisi perferendis, perspiciatis provident quia vitae.</p>
+    <input type="text" placeholder="name">
+    <a href="#" class="btn">click me</a>
+    <a href="#">link linkl</a>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

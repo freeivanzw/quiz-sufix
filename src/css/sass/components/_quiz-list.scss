@@ -1,0 +1,251 @@
+/*QUIZ LIST*/
+
+.quiz_list {
+    margin: 0 auto;
+    padding: 20px 10px 40px 10px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.quiz_list-add {
+    margin-bottom: 20px;
+    width: max-content;
+}
+
+.quiz_list-add .icon {
+    margin-left: 8px;
+    width: 14px;
+    height: 14px;
+    fill: var(--text-color-contrast);
+}
+
+.quiz_list > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.quiz_list > ul > li {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 20px;
+    max-width: 630px;
+    background-color: var(--site-bg-contrast);
+    border-radius: 5px;
+    position: relative;
+}
+
+.quiz_list > ul > li + li {
+    margin-top: 15px;
+}
+
+.quiz_list-link {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.to_quiz {
+    max-width: 92px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.to_quiz:hover {
+    color: var(--link-color-active);
+}
+
+.copy_quiz {
+    margin-left: 6px;
+    transition: 0.3s;
+}
+
+.copy_quiz:hover {
+    opacity: 0.7;
+}
+
+.copy_quiz .icon {
+    fill: var(--text-color);
+    transition: 0.3s;
+}
+
+.copy_quiz.active {
+    opacity: 1;
+}
+
+.copy_quiz.active .icon {
+    fill: var(--link-color-active);
+}
+
+.quiz_list-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.quiz_list-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quiz_list-btns .btn {
+    margin: 0 15px 8px 0;
+}
+
+.quiz_list-btns .btn .icon {
+    fill: var(--text-color);
+}
+
+.quiz_list-btns .btn span + .icon {
+    margin-left: 8px;
+}
+
+.quiz_list-more {
+    flex: 0 0 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 42px;
+}
+
+.quiz_list-more .icon {
+    fill: var(--text-color);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.quiz_list-more:hover .icon {
+    fill: var(--primary);
+}
+
+.quiz_list-control {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 10px;
+    background-color: var(--site-bg-contrast);
+    color: var(--text-color-contrast);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.quiz_list-control.active {
+    display: block;
+}
+
+.quiz_list-control a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--link-color-active)
+}
+
+.quiz_list-control a + a {
+    margin-top: 6px;
+}
+
+.quiz_list-control a .icon {
+    fill: var(--text-color);
+    transition: 0.3s;
+    margin-right: 8px;
+}
+
+.quiz_list-control a:hover {
+    text-decoration: underline;
+}
+
+.quiz_list-control a:hover .icon {
+    fill: var(--link-color-active);
+}
+
+.publication {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    max-width: 575px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+
+.publication + .question_control {
+    max-width: 575px;
+}
+
+.publication .item_title {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.publication_link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.publication_link span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px 0 10px;
+    height: 40px;
+    background-color: #f0f3f5;
+    border: 1px solid var(--border-color);
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.publication_link input {
+    flex: 1 1 auto;
+    border-radius: 0 5px 5px 0;
+    margin-right: 20px;
+}
+
+.publication_copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    padding: 0;
+}
+
+.publication_copy .icon {
+    fill: var(--text-color-contrast)
+}
+
+.publication_status {
+    margin-left: auto;
+}
+
+.publication_status.not_active {
+    color: var(--warning);
+}
+
+.publication_status.active {
+    color: var(--success);
+}
+
+.publication_share {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.publication_share b {
+    margin-right: 10px;
+}
+
+.publication_share a {
+    display: block;
+    padding: 5px;
+    filter: contrast(0);
+    transition: 0.3s;
+}
+
+.publication_share a:hover {
+    filter: contrast(1);
+}
