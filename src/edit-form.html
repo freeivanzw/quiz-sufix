@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You-quiz</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+</head>
+<body>
+<!--HEADER SITE-->
+<header class="header_site">
+    <a href="/" class="header_logo">
+        <img src="./images/logo.svg" alt="header_logo">
+    </a>
+    <div class="right_col">
+        <span class="tariff">Залишилось: <b>78</b> запитів зі <b>100</b></span>
+        <a href="#" class="user_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg></a>
+    </div>
+    <div class="header_menu">
+        <div class="toggle_language">
+            <a href="#" class="active">UA</a>
+            <a href="#">EN</a>
+        </div>
+        <span class="tariff"><b>78</b> запитів зі <b>100</b></span>
+        <ul class="menu_list">
+            <li><a href="#">Головка сторінка</a></li>
+            <li><a href="/">Мої квізи</a></li>
+            <li><a href="#">Мої пройдені квізи</a></li>
+            <li><a href="/cabinet.html">Реєстраційні дані</a></li>
+            <li><a href="#">Оплата та баланс</a></li>
+            <li><a href="#">Допомога</a></li>
+        </ul>
+        <div class="social_list">
+            <a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a>
+            <a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#instagram"></use></svg></a>
+        </div>
+        <a href="#" class="logout"><svg class="icon"><use xlink:href="./images/sprite.svg#logout"></use></svg>Вийти</a>
+    </div>
+</header>
+<main>
+    <!--EDIT QUIZ-->
+    <section class="edit_quiz">
+        <aside class="menu_quiz">
+            <a href="#" class="close-menu_quiz"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a>
+            <b class="quiz_title-menu">Створення квізу</b>
+            <ul class="menu_quiz-list">
+                <li><a href="#"><b>1</b><span>Стартова сторінка і опис</span></a></li>
+                <li><a href="./question.html"><b>2</b><span>Запитання</span></a></li>
+                <li><a href="#" class="active"><b>3</b><span>Форма контактів</span></a></li>
+                <li><a href="#"><b>4</b><span>Редагувати</span></a></li>
+                <li><a href="#"><b>5</b><span>Встановлення квізу</span></a></li>
+                <li><a href="#"><b>6</b><span>Запуск реклами</span></a></li>
+            </ul>
+        </aside>
+        <div class="quiz_content">
+            <a href="#" class="open-menu_quiz">open menu<svg class="icon"><use xlink:href="./images/sprite.svg#menu"></use></svg></a>
+            <div class="edit_form">
+                <label class="allow_input-box show-edit_from">
+                    <input type="checkbox">
+                    <span>Показувати форму контактів</span>
+                </label>
+            </div>
+            <div class="edit_form">
+                <div class="text_box">
+                    <b class="small_title">Імя</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Показувати імя</span>
+                    </label>
+                    <input type="text" class="allow_input" disabled>
+                </div>
+                <div class="text_box">
+                    <b class="small_title">Номер телефону</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Показувати номер телефону</span>
+                    </label>
+                    <input type="tel" class="allow_input" disabled>
+                </div>
+                <div class="text_box">
+                    <b class="small_title">Email</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Показувати email</span>
+                    </label>
+                    <input type="email" class="allow_input" disabled>
+                </div>
+                <div class="text_box">
+                    <b class="small_title">Адрес</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Показувати адрес</span>
+                    </label>
+                    <input type="text" class="allow_input" disabled>
+                </div>
+                <div class="text_box">
+                    <b class="small_title">Додатковий коментар</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Показувати додатковий коментар</span>
+                    </label>
+                    <input type="text" class="allow_input" disabled>
+                </div>
+                <div class="text_box">
+                    <b class="small_title">Текст на кнопці</b>
+                    <input type="text" class="allow_input">
+                </div>
+                <div class="text_box">
+                    <b class="small_title">Сторінка подяки</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Показувати сторінку подяки</span>
+                    </label>
+                </div>
+            </div>
+            <div class="edit_form">
+                <div class="text_box">
+                    <b class="small_title">Бонуси</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Додати бонуси</span>
+                    </label>
+                    <div class="add_bonus">
+                        <textarea placeholder="Текст"></textarea>
+                        <input type="text" placeholder="Посилання">
+                        <div class="select_picture">
+                            <div class="select_place"><svg class="icon"><use xlink:href="./images/sprite.svg#upload"></use></svg></div>
+                            <!--<img src="./images/start-page-desk.png">-->
+                            <a href="#" class="delete_picture"><svg class="icon"><use xlink:href="./images/sprite.svg#trash"></use></svg></a>
+                        </div>
+                        <a href="#" class="btn btn_fill">Додати</a>
+                    </div>
+                </div>
+            </div>
+            <div class="edit_form">
+                <div class="text_box">
+                    <a href="#" class="btn btn_fill">Додати мессенджери</a>
+                    <div class="messenger_box">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg>
+                        <input type="text" class="allow_input">
+                    </div>
+                    <div class="messenger_box">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#whatsapp"></use></svg>
+                        <input type="text" class="allow_input">
+                    </div>
+                    <div class="messenger_box">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#twitter"></use></svg>
+                        <input type="text" class="allow_input">
+                    </div>
+                </div>
+            </div>
+            <div class="edit_form">
+                <div class="text_box">
+                    <b class="small_title">Знижка</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Додати знижку</span>
+                    </label>
+                    <div class="sale_box">
+                        <input type="text" >
+                        <input type="text" class="sale_number">
+                        <span>%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="edit_form">
+                <div class="text_box">
+                    <b class="small_title">Консультанти</b>
+                    <label class="allow_input-box">
+                        <input type="checkbox">
+                        <span>Показувати коментарі консультанта</span>
+                    </label>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="shadow hidden">close</div>
+</main>
+<!--FOOTER SITE-->
+<footer class="footer_site">
+    <div class="bottom_info">
+        <span class="copyright">© Copyright - <a href="#">Quiz</a> 2013 - 2022</span>
+    </div>
+    <span class="confident"><a href="https://websufix.com">SUFIX</a></span>
+</footer>
+<div class="styleguide hidden" style="display: flex; flex-direction: column;">
+    <h1>hello world</h1>
+    <span class="main_title">hello world</span>
+    <h2>hello world</h2>
+    <span class="sub-main_title">hello world</span>
+    <h3>hello world</h3>
+    <span class="item_title">hello world</span>
+    <h4>hello world</h4>
+    <span class="box_title">hello world</span>
+    <h5>hello world</h5>
+    <span class="small_title">hello world</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias deleniti eos excepturi nisi perferendis, perspiciatis provident quia vitae.</p>
+    <input type="text" placeholder="name">
+    <a href="#" class="btn">click me</a>
+    <a href="#">link linkl</a>
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>

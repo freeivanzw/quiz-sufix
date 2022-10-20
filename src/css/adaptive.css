@@ -297,6 +297,10 @@
     margin: 0 0 0 auto;
   }
 
+  .edit_form {
+    padding: 25px;
+  }
+
   /*START PAGE*/
   /*FORM QUIZ*/
   /*RESUL*/

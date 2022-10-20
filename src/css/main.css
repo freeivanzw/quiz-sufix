@@ -1411,9 +1411,22 @@ body.user_page .footer_site {
   background-color: var(--site-bg-contrast);
 }
 
-.first_page .small_title {
+.quiz_content .small_title {
   display: block;
   margin-bottom: 4px;
+}
+
+.messenger_box {
+  display: flex;
+  align-items: center;
+}
+
+.messenger_box + .messenger_box {
+  margin-top: 6px;
+}
+
+.messenger_box .icon {
+  margin: 10px;
 }
 
 .allow_input-box {
@@ -1523,6 +1536,7 @@ body.user_page .footer_site {
   position: absolute;
   top: 0;
   left: 0;
+  filter: brightness(0.8);
 }
 
 .select_place .icon {
@@ -2110,6 +2124,58 @@ body.user_page .footer_site {
 .question_control .btn {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.edit_form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 5px;
+  background-color: var(--site-bg-contrast);
+}
+
+.edit_form + .edit_form {
+  margin-top: 10px;
+}
+
+.btn + .messenger_box {
+  margin-top: 12px;
+}
+
+.add_bonus {
+  display: flex;
+  flex-direction: column;
+}
+
+.add_bonus textarea {
+  margin-bottom: 6px;
+}
+
+.add_bonus input[type=text] {
+  margin-bottom: 6px;
+}
+
+.add_bonus .select_picture {
+  width: 100%;
+}
+
+.sale_box {
+  display: flex;
+  align-items: center;
+}
+
+.sale_box .sale_number {
+  text-align: center;
+  flex: 0 1 45px;
+  padding: 0 5px;
+  margin-left: 12px;
+}
+
+.sale_box span {
+  display: block;
+  margin-left: 6px;
 }
 
 /*START PAGE*/
