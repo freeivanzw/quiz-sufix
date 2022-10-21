@@ -1,6 +1,6 @@
 /* variables */
 :root {
-  --primary: #41b2ad;
+  --primary: #d13980;
   --secondary: #fff;
   --success: #3bad4b;
   --info: #66c0da;
@@ -8,16 +8,16 @@
   --danger: #f86c6b;
   --dark: #333333;
   --grey: #e3e3e3;
-  --site-bg: #ffd699;
+  --site-bg: #1e1e3e;
   --site-bg-contrast: #ffffff;
-  --text-color: #333333;
+  --text-color: #2e2e54;
   --text-color-light: #69748c;
   --text-color-contrast: #ffff;
-  --link-color: #41b2ad;
-  --link-color-active: #14eede;
+  --link-color: #d13980;
+  --link-color-active: #bc3373;
   --border-color: #d2d4d8;
   --border-color-active: rgba(102,192,218,.8);
-  --btn-bg: #41b2ad;
+  --btn-bg: #d13980;
   --btn-text: #ffffff;
 }
 
@@ -1432,7 +1432,10 @@ body.user_page .footer_site {
 .allow_input-box {
   display: flex;
   position: relative;
-  margin-bottom: 5px;
+}
+
+.form_row .allow_input-box {
+  margin-top: 11px;
 }
 
 .allow_input-box input[type=checkbox] {
@@ -1451,6 +1454,7 @@ body.user_page .footer_site {
   padding-left: 20px;
   position: relative;
   cursor: pointer;
+  min-height: 18px;
 }
 
 .allow_input-box span::before {
@@ -1462,14 +1466,20 @@ body.user_page .footer_site {
   top: 1px;
   left: 0;
   border-radius: 3px;
+  transition: 0.3s;
+}
+
+.allow_input-box input[type=checkbox]:checked + span::before {
+  background-color: var(--primary);
+  border-color: var(--primary);
 }
 
 .allow_input-box span::after {
   content: "";
   width: 9px;
   height: 6px;
-  border-bottom: 2px solid var(--primary);
-  border-left: 2px solid var(--primary);
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
   position: absolute;
   top: 4px;
   left: 3px;
@@ -2144,6 +2154,18 @@ body.user_page .footer_site {
   margin-top: 12px;
 }
 
+.form_row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form_row-inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding-left: 6px;
+}
+
 .add_bonus {
   display: flex;
   flex-direction: column;
@@ -2176,6 +2198,36 @@ body.user_page .footer_site {
 .sale_box span {
   display: block;
   margin-left: 6px;
+}
+
+.sub_item-text {
+  margin: 8px 0 6px;
+}
+
+.sub_item-text:nth-child(1) {
+  margin-top: 0;
+}
+
+.select_picture.add_consultant-photo {
+  margin: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.form_row-inner hr {
+  border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  margin: 14px 0;
+  display: block;
+}
+
+.consultant_list li + li {
+  margin-top: 8px;
+}
+
+.consultant_list .sub_item-text {
+  display: block;
+  margin-bottom: 6px;
 }
 
 /*START PAGE*/
